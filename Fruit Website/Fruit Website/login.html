@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: pink;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      background-image: url(image/tomato.jpg);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h1 {
+      text-align: center;
+      height:250px;
+      width: 320px;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-form label {
+      margin-bottom: 5px;
+    }
+
+    .login-form input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-form button {
+      padding: 10px;
+      background-color: #fda211;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  </style>
+  <link rel="shortcut icon" href="image/tomato.jpg">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form class="login-form" action="/login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required placeholder="username">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="password">
+      <p for="new">Forgot password</p>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
